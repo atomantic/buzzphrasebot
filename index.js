@@ -1,18 +1,19 @@
-// require('dotenv').config()
-const phrase = require('./lib/phrase')
-const twitter = require('./lib/twitter')
-const rand = require('lodash.random')
+require('dotenv').config()
 
-const nextTweet = function(){
-  // post a buzzphrase
-  twitter.post(phrase())
-  // next tweet will happen in 1-24 hours
-  const delay = rand(3600000, 86400000)
-  console.log('next tweet in', delay/1000/60, 'minutes')
-  setTimeout(nextTweet, delay)
-}
+const runner = require('./lib/runner.tweet')
 
-// kick it off
-nextTweet()
+const Hapi = require('hapi')
+const server = new Hapi.Server()
+
+server.connection({ port: 3000 })
+
+server.start((err) => {
+    if (err) {
+        throw err
+    }
+    console.log(`Server running at: ${server.info.uri}`)
+    // kick it off
+    runner()
+});
 
 // TODO: listen for mentions and respond
