@@ -13,6 +13,13 @@ server.route({
     handler: require('./api/root')
 })
 
+
+server.route({
+    method: 'GET',
+    path: '/test',
+    handler: require('./api/test')
+})
+
 server.start((err) => {
     if (err) {
         throw err
