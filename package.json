@@ -4,6 +4,7 @@
   "description": "A buzzphrase generator bot: https://twitter.com/buzzphrasebot",
   "main": "index.js",
   "scripts": {
+    "deploy": "now -E",
     "start": "node .",
     "setup": "npm i",
     "test": "echo \"Error: no test specified\" && exit 1"
