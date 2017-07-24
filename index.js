@@ -13,7 +13,7 @@ server.route({
     handler: require('./api/root')
 })
 
-
+// testing API so I can get a random image
 server.route({
     method: 'GET',
     path: '/test',
