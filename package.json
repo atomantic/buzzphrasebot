@@ -1,6 +1,6 @@
 {
   "name": "buzzphrasebot",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A buzzphrase generator bot: https://twitter.com/buzzphrasebot",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/atomantic/buzzphrasebot#readme",
   "dependencies": {
     "buzzphrase": "2.3.0",
+    "countdown": "2.6.0",
     "dotenv": "4.0.0",
     "hapi": "16.5.0",
     "lodash.capitalize": "4.2.1",

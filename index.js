@@ -7,6 +7,12 @@ const server = new Hapi.Server()
 
 server.connection({ port: 3000 })
 
+server.route({
+    method: 'GET',
+    path: '/',
+    handler: require('./api/root')
+})
+
 server.start((err) => {
     if (err) {
         throw err
@@ -14,6 +20,6 @@ server.start((err) => {
     console.log(`Server running at: ${server.info.uri}`)
     // kick it off
     runner()
-});
+})
 
 // TODO: listen for mentions and respond
