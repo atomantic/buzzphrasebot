@@ -26,4 +26,5 @@ https://zeit.co
 
 ```
 npm i -g now
+now
 ```
