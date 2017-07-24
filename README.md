@@ -6,6 +6,8 @@ https://twitter.com/buzzphrasebot
 
 ## Development
 
+If you want to make your own twitter bot, there's a pretty good guide here: https://github.com/spences10/twitter-bot-bootstrap
+
 ```
 git clone git@github.com:atomantic/buzzphrasebot.git
 cd buzzphrasebot
@@ -26,5 +28,5 @@ https://zeit.co
 
 ```
 npm i -g now
-now
+npm run deploy
 ```

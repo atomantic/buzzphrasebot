@@ -1,4 +1,4 @@
-require('dotenv').config()
+// require('dotenv').config()
 const phrase = require('./lib/phrase')
 const twitter = require('./lib/twitter')
 const rand = require('lodash.random')
