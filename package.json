@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/atomantic/buzzphrasebot#readme",
   "dependencies": {
-    "buzzphrase": "2.5.1",
+    "buzzphrase": "2.5.3",
     "countdown": "2.6.0",
     "dotenv": "4.0.0",
     "hapi": "16.5.0",
