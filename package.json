@@ -28,6 +28,6 @@
     "lodash.capitalize": "4.2.1",
     "lodash.random": "3.2.0",
     "lodash.sample": "4.2.1",
-    "twit": "2.2.9"
+    "twit": "2.2.11"
   }
 }
