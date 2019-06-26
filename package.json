@@ -23,7 +23,7 @@
     "buzzphrase": "2.5.3",
     "countdown": "2.6.0",
     "dotenv": "4.0.0",
-    "hapi": "16.5.0",
+    "hapi": "18.1.0",
     "jimp": "0.2.28",
     "lodash.capitalize": "4.2.1",
     "lodash.random": "3.2.0",
